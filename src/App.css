@@ -1,6 +1,8 @@
-.App {
+/* General App Styles */
+/* .App {
   text-align: center;
-}
+  font-family: Arial, sans-serif;
+} */
 
 .App-logo {
   height: 40vmin;
@@ -36,3 +38,125 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+/* App.css */
+
+/* General App Styles */
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header Styles */
+.homeHeader {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 10px;
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cartIcon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.itemCount {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Footer Styles */
+.footer {
+  width: 100%;
+  padding: 10px;
+  background-color: #f8f9fa;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 0;
+}
+
+.cartTotalPrice {
+  font-size: 18px;
+  font-weight: bold;
+  color: #28a745;
+}
+
+/* Home Styles */
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  flex: 1; /* Allows the container to expand and fill the remaining space */
+}
+
+.homeBody {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.productCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.productImage {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.productDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 20px;
+  color: #28a745;
+  margin-bottom: 20px;
+}
+
+.cartBtn {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cartBtn:hover {
+  background-color: #0056b3;
+}
+
+
